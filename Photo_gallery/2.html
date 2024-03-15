@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./2.css">
+    <title>Dynamic Photo Gallery</title>
+</head>
+<body>
+
+    <div class="filter-buttons">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('Hotel_Exteriors')">Hotel Exteriors</button>
+        <button onclick="filterImages('Pool_Area')">Pool Area</button>
+        <button onclick="filterImages('Living_Room')">Living Room</button>
+        <button onclick="filterImages('Bed_Room')">Bed Room</button>
+        <button onclick="filterImages('Dining_Area')">Dining Area</button>
+        <button onclick="filterImages('Others')">Others</button>
+        <button onclick="filterImages('Food')">Food</button>
+
+        <!-- New custom filters -->
+        <button onclick="filterByColor('all')">All Colors</button>
+        <button onclick="filterByColor('white')">White</button>
+        <button onclick="filterByColor('blue')">Blue</button>
+    
+        <button onclick="filterBySize('all')">All Sizes</button>
+        <button onclick="filterBySize('small')">Small</button>
+        <button onclick="filterBySize('medium')">Medium</button>
+        <button onclick="filterBySize('large')">Large</button>
+    
+        <button onclick="filterByTag('all')">All Tags</button>
+        <button onclick="filterByTag('landscape')">Landscape</button>
+        <button onclick="filterByTag('portrait')">Portrait</button>
+    </div>
+
+    <div class="gallery">
+        <div class="image Hotel_Exteriors"  data-color="blue" data-size="large"  data-tags="landscape"><img src="./image/1.jpg" alt="Hotel_Exteriors 1"></div>
+
+        <div class="image reception" data-color="white" data-size="medium"><img src="./image/2.jpg" alt="Reception 1"></div>
+
+        <div class="image Bed_Room" data-color="white" ><img src="./image/3.jpg" alt="Bed_Room 1"></div>
+
+        <div class="image Dining_Area" data-color="white" ><img src="./image/4.jpg" alt="Dining_Area 1"></div>
+
+        <div class="image Pool_Area" data-color="blue" data-size="large" ><img src="./image/5.jpg" alt="Pool_Area1"></div>
+
+        <div class="image Pool_Area" data-color="blue" data-size="small" ><img src="./image/about.jpg" alt="Pool_Area 1"></div>
+
+        <div class="image Others" ><img src="./image/aguda.jpg" alt="Others 1"></div>
+
+        <div class="image Pool_Area"  data-tags="landscape" ><img src="./image/background.jpg" alt="Pool_Area 1"></div>
+
+        <div class="image Living_Room"  data-tags="landscape"><img src="./image/background1.jpg" alt="Living Room 1"></div>
+
+        <div class="image others"><img src="./image/beach.jpg" alt="Others 1"></div>
+
+        <div class="image others" img src="./image/galleries.jpg" alt="Others 1"></div>
+
+        <div class="image Food"data-size="medium" data-tags="portrait"><img src="./image/goan.jpg" alt="Food 1"></div>
+
+        <div class="image Hotel_Exteriors" data-tags="portrait"><img src="image/hotel.jpg" alt="Hotel_Exteriors 1"></div>
+
+        <div class="image Living_Room" data-color="white" data-size="small"><img src="image/living.jpg"alt="Living 1"></div>
+
+        <div class="image Pool_Area"data-size="small" data-tags="portrait"><img src="image/pool.jpg" alt="Pool 1"></div>
+
+        <!-- Add more images with appropriate classes and alt text -->
+    </div>
+
+<script src="./2.js"></script>
+</body>
+</html>
