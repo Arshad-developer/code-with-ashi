@@ -1,1 +1,1 @@
-# Dynamic-photo-gallery
+# filter-photos-gallery
